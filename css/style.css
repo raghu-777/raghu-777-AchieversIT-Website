@@ -1,0 +1,3221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: orangered;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(80, 97, 206, 0.634);
+}
+
+/* Header Stylings Starts Here  */
+
+.header {
+    background-color: #343a40;
+}
+
+.header .container-fluid {
+    margin: 15px;
+}
+
+.header .header-links ul {
+    margin-left: 143px;
+    margin-top: 7px;
+}
+
+.header .logo {
+    margin-left: 35px;
+}
+
+.header .header-links .al-menu {
+    margin-left: -11px;
+}
+
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    .header .container-fluid {
+        margin: 15px;
+    }
+
+    .header .header-links ul {
+        margin-left: 0px;
+    }
+
+    .header .logo {
+        margin-left: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header .container-fluid {
+        margin: 0px;
+    }
+
+    .header .header-links ul {
+        margin-left: 0px;
+    }
+
+    .header .logo {
+        margin-left: 0px;
+    }
+
+
+
+}
+
+/* Header DropDown List styling Starts */
+
+
+.header .header-links .al-menu .dropdown-item {
+    padding: 12px 0px;
+    padding-left: 15px;
+    padding-right: 35px;
+}
+
+.header .nav-item .nav-link {
+    margin-left: 26px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.header .nav-item .nav-link:hover {
+    color: orangered;
+}
+
+.header .fa-solid {
+    color: aqua;
+    font-size: 30px;
+    background-color: #343a40;
+}
+
+.header .dropend .dropdown-toggle::after {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+
+/* Header Stylings Ends Here  */
+
+/* Sliding Images Caurosal Styling Starts */
+
+
+
+.sliding-img a {
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    padding: 10px 20px;
+}
+
+.sliding-img a:hover {
+    background-color: #1badd9;
+    color: white;
+}
+
+.sliding-img .fa-angle-left {
+    position: absolute;
+    left: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.sliding-img .fa-chevron-right {
+    position: absolute;
+    right: 50px;
+    font-size: 27px;
+    color: white;
+}
+
+.sliding-img h1 {
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.sliding-img .sliding-img-caption {
+    position: absolute;
+    bottom: 120px;
+    right: 300px;
+}
+
+.sliding-img .sliding-img-caption a {
+    margin-left: 0px;
+}
+
+
+.carousel-item img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.sliding-img .carousel-indicators {
+    margin-bottom: 60px;
+}
+
+/* Media Query For Tablets */
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    .sliding-img .fa-angle-left {
+        left: 20px;
+        font-size: 22px;
+    }
+
+    .sliding-img .fa-chevron-right {
+        right: 12px;
+        font-size: 20px;
+    }
+
+    .sliding-img h1 {
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
+    .sliding-img .sliding-img-caption {
+        position: absolute;
+        bottom: 140px;
+        right: 10px;
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+
+    .sliding-img .sliding-img-caption a {
+        margin-left: 0px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+        object-position: top right;
+    }
+
+    .sliding-img .carousel-indicators {
+        margin-bottom: 75px;
+    }
+
+
+}
+
+/* Media Query For Mobiles */
+@media only screen and (max-width: 600px) {
+    .sliding-img .fa-angle-left {
+        position: absolute;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .sliding-img .fa-chevron-right {
+        position: absolute;
+        right: 12px;
+        font-size: 19px;
+    }
+
+    .sliding-img h1 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    .sliding-img .sliding-img-caption {
+        position: absolute;
+        bottom: 140px;
+        right: 10px;
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+
+    .sliding-img .sliding-img-caption a {
+        margin-left: 0px;
+    }
+
+    .carousel-item img {
+        height: 370px;
+        object-fit: cover;
+        object-position: top right;
+    }
+
+    .sliding-img .carousel-indicators {
+        margin-bottom: 75px;
+    }
+
+}
+
+/* Media Query for small Devices  */
+@media only screen and (max-width: 300px) {
+
+    .sliding-img h1 {
+        font-size: 20px;
+    }
+
+    .sliding-img .sliding-img-caption {
+        position: absolute;
+        bottom: 100px;
+        right: 0px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .sliding-img .sliding-img-caption a {
+        margin-left: 0px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+        object-fit: cover;
+        object-position: top right;
+    }
+
+    .sliding-img .carousel-indicators {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+/* Sliding Images Caurosal Styling Ends */
+
+
+/* Floating Buttons Stylings Starts Here  */
+
+#floating-buttons {
+    position: relative;
+    bottom: 64px;
+    width: 90%;
+}
+
+
+#floating-buttons a {
+    text-decoration: none;
+}
+
+.float-btn .thin-text {
+    color: #727171;
+    font-weight: lighter;
+    font-size: 16px;
+
+}
+
+.float-btn .bold-text {
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+
+.float-btn .blue-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0c5397;
+}
+
+.float-btn i {
+    margin-left: 5px;
+
+}
+
+
+.float-btn {
+    width: 100%;
+    padding: 25px 35px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .2s linear;
+
+}
+
+.first-btn:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: all .2s linear;
+    background-image: linear-gradient(to right, #2c4358, #2979ae);
+}
+
+
+.second-btn:hover {
+    transform: scale(1.1);
+    transition: all .2s linear;
+    background-image: linear-gradient(to left, #fe5506, #f7b030);
+}
+
+.third-btn:hover {
+    transform: scale(1.1);
+    transition: all .2s linear;
+    background-image: linear-gradient(to right, #2c4053, #297eb5);
+}
+
+
+.float-btn:hover .thin-text {
+    color: antiquewhite;
+}
+
+.float-btn:hover .bold-text {
+    color: antiquewhite;
+}
+
+.float-btn:hover .blue-text {
+    color: antiquewhite;
+}
+
+@media only screen and (min-width: 600px) and (max-width:992px) {
+
+    #floating-buttons {
+        width: 100%;
+    }
+
+    .float-btn {
+        padding: 20px 10px;
+        margin-top: 12px;
+    }
+
+    .float-btn .thin-text {
+        font-size: 12px;
+
+    }
+
+    .float-btn .bold-text {
+        font-size: 12px;
+    }
+
+
+    .float-btn .blue-text {
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .float-btn {
+        padding: 15px 20px;
+        margin-top: 15px;
+    }
+
+    .float-btn .thin-text {
+        font-size: 14px;
+
+    }
+
+    .float-btn .bold-text {
+        font-size: 15px;
+    }
+
+
+    .float-btn .blue-text {
+        font-size: 14px;
+    }
+}
+
+/* Media Query for small Devices  */
+@media only screen and (max-width: 300px) {
+    .float-btn {
+        padding: 15px 25px;
+        margin-top: 15px;
+    }
+
+    .float-btn .thin-text {
+        font-size: 10px;
+
+    }
+
+    .float-btn .bold-text {
+        font-size: 10px;
+    }
+
+
+    .float-btn .blue-text {
+        font-size: 10px;
+    }
+}
+
+
+/* Floating Buttons Stylings Ends Here  */
+
+
+/* Courses section Style Starts */
+
+
+@media only screen and (min-width: 992px) {
+    #courses {
+        width: 100%;
+        padding: 0px 100px;
+    }
+}
+
+#courses .card {
+    width: 260px;
+    height: 18rem;
+}
+
+
+#courses h1 {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#courses .fa-brands {
+    font-size: 63px;
+    color: white;
+    padding: 30px 12px;
+}
+
+#courses .card-logo .fa-solid {
+    font-size: 63px;
+    color: white;
+    padding: 30px 12px;
+}
+
+#courses .card-label h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    padding: 28px 0px;
+}
+
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    #courses {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #courses .card {
+        margin: auto;
+    }
+
+    #courses .col3-card {
+        margin-top: 50px;
+    }
+
+    #courses .col4-card {
+        margin-top: 50px;
+    }
+
+    #courses .col7-card {
+        margin-top: 50px;
+    }
+
+    #courses .col8-card {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #courses {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #courses .card {
+        margin: auto;
+        width: 350px;
+        height: 19rem;
+
+    }
+
+    #courses .col2-card {
+        margin-top: 50px;
+    }
+
+    #courses .col3-card {
+        margin-top: 50px;
+    }
+
+    #courses .col4-card {
+        margin-top: 50px;
+    }
+
+    #courses .col6-card {
+        margin-top: 50px;
+    }
+
+    #courses .col7-card {
+        margin-top: 50px;
+    }
+
+    #courses .col8-card {
+        margin-top: 50px;
+    }
+
+    #courses h1 {
+        font-size: 27px;
+        text-align: center;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+
+
+}
+
+@media only screen and (max-width: 300px) {
+    #courses {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #courses .card {
+        margin: auto;
+    }
+
+}
+
+/* Card Head Shadow  */
+
+#courses .card-1 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to left, #ed0a88, #fb6169);
+}
+
+#courses .card-2 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to left, #f1c44b, #f29c4a);
+}
+
+#courses .card-3 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to left, #e04fde, #93edfa);
+}
+
+#courses .card-4 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to left, #0ecef5, #85f9a5);
+}
+
+#courses .card-5 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to right, #01074c, #189fcd);
+}
+
+#courses .card-6 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to right, #2d9ad5, #c2e4f4);
+}
+
+#courses .card-7 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to left, #ee0e87, #fb6468);
+}
+
+#courses .card-8 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to left, #fea975, #ff8261);
+}
+
+#courses .card-font img {
+    margin-top: -90px;
+    margin-right: 11px;
+    width: 30px;
+    height: 33px;
+}
+
+#courses .card-body .text {
+    height: 57px;
+}
+
+#courses .card-body .text p {
+    font-size: 12px;
+    word-spacing: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+#courses .card-body .fa-star {
+    color: yellow;
+    font-size: 20px;
+    margin: 2px;
+}
+
+#courses .card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Card Hover properties */
+#courses .card {
+    position: relative;
+}
+
+#courses .card .card-info {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.9s ease 0s;
+    opacity: 0;
+    overflow-y: auto;
+}
+
+#courses .card .card-info .card-info-head {
+    padding: 10px 20px;
+    margin-top: 10px;
+
+}
+
+#courses .card .card-info p {
+    padding: 0;
+    font-size: 12px;
+    opacity: 0;
+}
+
+#courses .card .card-info h4 {
+    padding: 0;
+    margin-top: -10px;
+    font-size: 17px;
+    opacity: 0;
+}
+
+#courses .card .card-info ul {
+    padding: 0px 30px;
+    margin-left: 20px;
+}
+
+#courses .card .card-info ul li {
+    font-size: 12px;
+    list-style-type: disc;
+    padding: 5px 0px;
+    opacity: 0;
+}
+
+#courses .card .card-info a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    opacity: 0;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+
+#courses .card:hover .card-info {
+    top: 0;
+    transition: all 0.7s ease 0s;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#courses .card .card-info::-webkit-scrollbar {
+    width: 5px;
+}
+
+#courses .card .card-info::-webkit-scrollbar-track {
+    background: white;
+}
+
+#courses .card .card-info::-webkit-scrollbar-thumb {
+    background: orangered;
+}
+
+
+#courses .card:hover p {
+    opacity: 1;
+}
+
+#courses .card:hover h4 {
+    opacity: 1;
+}
+
+#courses .card:hover ul li {
+    opacity: 1;
+}
+
+#courses .card .card-info a:hover {
+    background-color: red;
+    border: 1px solid black;
+
+}
+
+#courses .card:hover a {
+    opacity: 1;
+}
+
+
+
+
+
+/* Courses section Style Ended */
+
+
+/* New/Recent Courses Section Style Starts */
+
+
+
+@media only screen and (min-width: 992px) {
+    #new-courses {
+        width: 88%;
+    }
+
+}
+
+#new-courses .card {
+    width: 260px;
+    height: 18rem;
+
+}
+
+
+#new-courses h1 {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#new-courses .fa-brands {
+    font-size: 63px;
+    color: white;
+    padding: 30px 0px;
+    padding-left: 15px;
+}
+
+
+#new-courses .card-label h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    padding: 28px 13px;
+}
+
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    #new-courses {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #new-courses .card {
+        margin: auto;
+    }
+
+    #new-courses .col3-card {
+        margin-top: 50px;
+    }
+
+    #new-courses .col4-card {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #new-courses {
+        width: 100%;
+    }
+
+    #new-courses .card {
+        margin: auto;
+        width: 350px;
+        height: 19rem;
+
+    }
+
+    #new-courses h1 {
+        font-size: 27px;
+        text-align: center;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #new-courses .col2-card {
+        margin-top: 50px;
+    }
+
+    #new-courses .col3-card {
+        margin-top: 50px;
+    }
+
+    #new-courses .col4-card {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 300px) {
+    #new-courses {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #new-courses .card {
+        margin: auto;
+    }
+
+}
+
+/* Card Head Shadow  */
+
+#new-courses .card-1 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to left, #0ecef5, #85f9a5);
+
+}
+
+#new-courses .card-2 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to right, #01074c, #189fcd);
+}
+
+#new-courses .card-3 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to right, #e04fde, #93edfa);
+
+}
+
+#new-courses .card-4 .card-head {
+
+    height: 120px;
+    background-image: linear-gradient(to right, #ff8261, #feac77);
+}
+
+
+#new-courses .card-font img {
+    margin-right: 11px;
+    width: 30px;
+    height: 33px;
+}
+
+#new-courses .card-body .text {
+    height: 57px;
+}
+
+#new-courses .card-body .text p {
+    font-size: 12px;
+    word-spacing: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+#new-courses .card-body .fa-star {
+    color: yellow;
+    font-size: 20px;
+    margin: 2px;
+}
+
+#new-courses .card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Card Hover properties */
+#new-courses .card {
+    position: relative;
+}
+
+#new-courses .card .card-info {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.9s ease 0s;
+    opacity: 0;
+    overflow-y: auto;
+}
+
+#new-courses .card .card-info .card-info-head {
+    padding: 10px 20px;
+    margin-top: 10px;
+
+}
+
+#new-courses .card .card-info p {
+    padding: 0;
+    font-size: 12px;
+    opacity: 0;
+}
+
+#new-courses .card .card-info h4 {
+    padding: 0;
+    margin-top: -10px;
+    font-size: 17px;
+    opacity: 0;
+}
+
+#new-courses .card .card-info ul {
+    padding: 0px 30px;
+    margin-left: 20px;
+}
+
+#new-courses .card .card-info ul li {
+    font-size: 12px;
+    list-style-type: disc;
+    padding: 5px 0px;
+    opacity: 0;
+}
+
+#new-courses .card .card-info a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    opacity: 0;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+
+#new-courses .card:hover .card-info {
+    top: 0;
+    transition: all 0.7s ease 0s;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#new-courses .card .card-info::-webkit-scrollbar {
+    width: 5px;
+}
+
+#new-courses .card .card-info::-webkit-scrollbar-track {
+    background: white;
+}
+
+#new-courses .card .card-info::-webkit-scrollbar-thumb {
+    background: orangered;
+}
+
+
+#new-courses .card:hover p {
+    opacity: 1;
+}
+
+#new-courses .card:hover h4 {
+    opacity: 1;
+}
+
+#new-courses .card:hover ul li {
+    opacity: 1;
+}
+
+#new-courses .card .card-info a:hover {
+    background-color: red;
+    border: 1px solid black;
+
+}
+
+#new-courses .card:hover a {
+    opacity: 1;
+}
+
+/* New Courses Section Style ends */
+
+
+/* Header Stylings Starts Here  */
+
+.header {
+    background-color: #343a40;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .header .container-fluid {
+        margin: 15px;
+    }
+
+    .header .header-links ul {
+        margin-left: 143px;
+        margin-top: 7px;
+    }
+
+    .header .logo {
+        margin-left: 35px;
+    }
+
+    .header .header-links .al-menu {
+        margin-left: -11px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .header .dropend ul .dropdown-item {
+        padding-left: 30px;
+    }
+
+}
+
+.header .header-links .al-menu .dropdown-item {
+    padding: 12px 0px;
+    padding-left: 15px;
+    padding-right: 35px;
+}
+
+.header .nav-item .nav-link {
+    margin-left: 26px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.header .nav-item .nav-link:hover {
+    color: orangered;
+}
+
+.header .fa-solid {
+    color: aqua;
+    font-size: 30px;
+    background-color: #343a40;
+}
+
+.header .dropend .dropdown-toggle::after {
+    position: absolute;
+    right: 10px;
+}
+
+
+/* Header Stylings Ends Here  */
+
+
+/* Categories Section Styling Starts */
+
+@media only screen and (min-width: 992px) {
+    #categories {
+        width: 99%;
+        padding: 0px 130px;
+
+    }
+
+    #categories-heading {
+        width: 99%;
+        padding-left: 87px;
+    }
+
+    #categories .cat-logo {
+        width: 100px;
+        margin-top: 20px;
+
+    }
+}
+
+#categories-heading h1 {
+    font-size: 1.75rem;
+    font-weight: bolder;
+}
+
+#categories p {
+    color: #020b4f;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#categories .cat-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    padding-top: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px) {
+
+    #categories {
+        width: 100%;
+        margin-left: 0px 10px;
+    }
+
+    #categories-heading h1 {
+        text-align: center;
+        font-size: 27px;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #categories .cat-logo {
+        width: 100px;
+        margin-top: 20px;
+
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:992px) {
+
+    #categories {
+        width: 100%;
+    }
+
+    #categories-heading {
+        width: 100%;
+    }
+
+    #categories .cat-logo {
+        width: 110px;
+        margin-top: 20px;
+
+    }
+
+}
+
+#categories .cat-logo:hover {
+    transform: scale(1.2);
+}
+
+#categories .cat-logo1 .fa-dev {
+    font-size: 50px;
+    color: orangered;
+    opacity: 0.5;
+}
+
+#categories .cat-logo2 .fa-laptop-code {
+    font-size: 50px;
+    color: indigo;
+    opacity: 0.5;
+}
+
+#categories .cat-logo3 .fa-mobile-screen-button {
+    font-size: 50px;
+    color: cyan;
+    opacity: 0.5;
+}
+
+#categories .cat-logo4 .fa-filter-circle-dollar {
+    font-size: 50px;
+    color: #0c5397;
+    opacity: 0.5;
+}
+
+#categories .cat-logo5 .fa-file-code {
+    font-size: 50px;
+    color: orange;
+    opacity: 0.5;
+}
+
+#categories .cat-logo6 .fa-database {
+    font-size: 50px;
+    color: lightblue;
+    opacity: 0.5;
+}
+
+#categories .cat-logo7 .fa-chalkboard-user {
+    font-size: 50px;
+    color: lightgreen;
+    opacity: 0.5;
+}
+
+#categories .cat-logo8 .fa-jsfiddle {
+    font-size: 50px;
+    color: red;
+    opacity: 0.5;
+}
+
+#categories .cat-logo9 .fa-mask {
+    font-size: 50px;
+    color: lightblue;
+    opacity: 0.5;
+}
+
+#categories .cat-logo10 .fa-mobile-screen-button {
+    font-size: 50px;
+    color: red;
+    opacity: 0.5;
+}
+
+#categories .cat-logo11 .fa-python {
+    font-size: 50px;
+    color: lightgreen;
+    opacity: 0.5;
+}
+
+#categories .cat-logo12 .fa-codepen {
+    font-size: 50px;
+    color: indigo;
+    opacity: 0.5;
+}
+
+
+
+/* Categories Section Styling Ends */
+
+/* Reviews Section Styling */
+#reviews {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#reviews .card {
+    width: 350px;
+    height: 18rem;
+
+}
+
+#reviews .carousel-inner {
+    width: 78%;
+    margin-left: 152px;
+}
+
+#reviews .card .card-head {
+    height: 110px;
+}
+
+#reviews h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-left: 102px;
+    margin-bottom: 20px;
+}
+
+
+#reviews h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+#reviews .card-logo h3 {
+    font-size: 50px;
+    color: #1c92d2;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    text-align: center;
+    margin: 20px;
+    height: 68px;
+    width: 68px;
+}
+
+/* Card Head Shadow  */
+
+#reviews .section-row1 .card-1 .card-head {
+
+    background-image: linear-gradient(to right, #ff8060, #fea975);
+}
+
+#reviews .section-row1 .card-2 .card-head {
+
+    background-image: linear-gradient(to right, #2395d3, #b8dff2);
+}
+
+#reviews .section-row1 .card-3 .card-head {
+
+    background-image: linear-gradient(to right, #020d51, #158abb);
+}
+
+#reviews .section-row2 .card-1 .card-head {
+
+    background-image: linear-gradient(to right, #80f8a9, #1fd4e9);
+}
+
+#reviews .section-row2 .card-2 .card-head {
+
+    background-image: linear-gradient(to right, #93e9f9, #da5ce0);
+}
+
+#reviews .section-row2 .card-3 .card-head {
+
+    background-image: linear-gradient(to right, #031457, #1798c7);
+}
+
+#reviews .section-row3 .card-1 .card-head {
+
+    background-image: linear-gradient(to right, #f29d4a, #f2c04b);
+}
+
+#reviews .section-row3 .card-2 .card-head {
+
+    background-image: linear-gradient(to right, #021155, #199ecc);
+}
+
+#reviews .section-row3 .card-3 .card-head {
+
+    background-image: linear-gradient(to right, #8bfca2, #19d2ef);
+}
+
+#reviews .card-font img {
+    margin-right: 11px;
+    width: 30px;
+    height: 33px;
+}
+
+#reviews .card-body .text {
+    height: 57px;
+}
+
+#reviews .card-body .text p {
+    font-size: 16px;
+    overflow: hidden;
+    text-align: justify;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+#reviews .card-body .fa-star {
+    color: yellow;
+    font-size: 17px;
+    margin: 2px;
+}
+
+
+
+#reviews .card1 {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#reviews .card2 {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#reviews .card3 {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#reviews button .fa-angle-left {
+    position: absolute;
+    left: 120px;
+    color: orangered;
+    font-size: 27px;
+    padding: 12px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#reviews button .fa-chevron-right {
+    position: absolute;
+    right: 125px;
+    color: orangered;
+    font-size: 24px;
+    padding: 12px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#reviews .carousel-indicators {
+    bottom: -50px;
+
+}
+
+#reviews .carousel-indicators [data-bs-target] {
+    background-color: #00b5ff;
+    padding: 2px 5px;
+}
+
+/* #reviews .carousel-indicators .btn1{
+    background-color: blue;
+}
+
+#reviews .carousel-indicators .btn2{
+    background-color: green;
+}
+
+#reviews .carousel-indicators .btn3{
+    background-color:red;
+} */
+
+
+#reviews .view-all-btn {
+    text-align: center;
+    margin: 60px 0px;
+
+}
+
+#reviews .view-all-btn a {
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#reviews .view-all-btn .fa-chevron-right {
+    margin: 5px;
+    width: 1px;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    #reviews {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #reviews .carousel-inner {
+        width: 92%;
+        margin-left: 33px;
+    }
+
+    #reviews .card {
+        width: 245px;
+        height: 17rem;
+
+    }
+
+    #reviews .card .card-head {
+        height: 70px;
+    }
+
+    #reviews .card-logo h3 {
+        font-size: 30px;
+        padding: 5px;
+        margin: 12px;
+        height: 50px;
+        width: 50px;
+    }
+
+    #reviews h2 {
+        font-size: 20px;
+    }
+
+    #reviews button .fa-angle-left {
+        position: absolute;
+        left: 5px;
+        padding: 18px 4px;
+        height: 55px;
+        width: 45px;
+
+    }
+
+    #reviews button .fa-chevron-right {
+        position: absolute;
+        right: 10px;
+        padding: 18px 4px;
+        height: 55px;
+        width: 45px;
+
+    }
+
+    #reviews h1 {
+        margin-left: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #reviews {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    #reviews .carousel-inner {
+        width: 100%;
+        margin-left: auto;
+    }
+
+    #reviews .card {
+        margin: auto;
+        width: 325px;
+        height: 18rem;
+
+    }
+
+    #reviews h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 27px;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #reviews .card-2 {
+        margin-top: 25px;
+    }
+
+    #reviews .card-3 {
+        margin-top: 25px;
+    }
+
+    #reviews button .fa-angle-left {
+        position: absolute;
+        left: 0px;
+        padding: 11px 4px;
+        height: 50px;
+        width: 26px;
+
+    }
+
+    #reviews button .fa-chevron-right {
+        position: absolute;
+        right: 0px;
+        padding: 11px 4px;
+        height: 50px;
+        width: 26px;
+
+    }
+
+    #reviews .view-all-btn {
+        margin: 50px 0px;
+
+    }
+
+    #reviews .view-all-btn a {
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 300px) {
+    #reviews {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}
+
+/* Reviews Section Styling Ends */
+
+
+/* Contact us label stylings starts */
+
+
+#contact-label h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#contact-label a {
+    font-size: 15px;
+    background-color: white;
+    color: #0c5397;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+#contact-label a:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.795);
+}
+
+#contact-label {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    background: linear-gradient(to right, #93e6fa, #1c73de);
+}
+
+@media only screen and (max-width: 600px) {
+    #contact-label {
+        height: 200px;
+    }
+}
+
+
+/* Contact us label stylings ends */
+
+/* AchiverIT Edge Styling */
+
+#achieversit-edge {
+    margin-top: 50px;
+}
+
+#achieversit-edge .container-fluid {
+    width: 93%;
+}
+
+
+#achieversit-edge h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#achieversit-edge p {
+    font-size: 16px;
+}
+
+#achieversit-edge .edge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 170px;
+
+}
+
+#achieversit-edge .edge:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#achieversit-edge .fa-circle-check {
+    font-size: 65px;
+    color: #9cecfb;
+    padding: 20px;
+}
+
+#achieversit-edge .fa-infinity {
+    font-size: 65px;
+    color: #ee0979;
+    padding: 20px;
+}
+
+#achieversit-edge .fa-chart-line {
+    font-size: 65px;
+    color: #ffff1c;
+    padding: 20px;
+}
+
+#achieversit-edge .logo h1 {
+    font-size: 52px;
+    color: #3494e6;
+    padding: 20px;
+}
+
+#achieversit-edge #ait-edge-heading {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-left: 85px;
+}
+
+@media only screen and (max-width: 600px) {
+    #achieversit-edge #ait-edge-heading {
+        margin-left: 0;
+        text-align: center;
+        font-size: 27px;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #achieversit-edge .fa-circle-check {
+        font-size: 45px;
+    }
+
+    #achieversit-edge .fa-infinity {
+        font-size: 45px;
+    }
+
+    #achieversit-edge .fa-chart-line {
+        font-size: 45px;
+
+    }
+
+    #achieversit-edge .logo h1 {
+        font-size: 35px;
+    }
+
+    #achieversit-edge .container-fluid {
+        width: 95%;
+    }
+
+
+    #achieversit-edge h3 {
+        font-size: 15px;
+    }
+
+    #achieversit-edge p {
+        font-size: 15px;
+    }
+
+    #achieversit-edge .edge {
+        margin-bottom: 15px;
+        width: 160px;
+        height: 160px;
+        background-color: white;
+        box-shadow: 0 0 15px 1px rgb(0 0 0 / 15%);
+
+    }
+
+    #achieversit-edge .edge:hover {
+        background-color: white;
+        box-shadow: 0 0 15px 1px rgb(0 0 0 / 15%);
+    }
+}
+
+/* AchiverIT Edge Styling Ends */
+
+/* AIT Placement Section Styling */
+
+#ait-placemtn-info {
+    padding: 3px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.686), rgba(255, 255, 255, 0.644)), url(../images/background.jpg);
+    background-size: cover;
+    height: 325px;
+    text-align: center;
+
+}
+
+#ait-placemtn-info {
+    margin-top: 50px;
+}
+
+#ait-placemtn-info .container-fluid {
+    width: 89%;
+}
+
+
+#ait-placemtn-info h2 {
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #0c5397;
+}
+
+#ait-placemtn-info p {
+    font-size: 16px;
+    color: #727171;
+}
+
+#ait-placemtn-info .edge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 157px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#ait-placemtn-info .edge-1:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+#ait-placemtn-info .edge-2:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+    background: linear-gradient(to right, #f7b733, #ff4700);
+}
+
+#ait-placemtn-info .edge-3:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+#ait-placemtn-info .edge-4:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+    background: linear-gradient(to right, #f7b733, #ff4700);
+}
+
+#ait-placemtn-info .edge:hover h2 {
+    color: white;
+}
+
+#ait-placemtn-info .edge:hover p {
+    color: white;
+}
+
+
+#ait-placemtn-info h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #0c5397;
+}
+
+#ait-placemtn-info #info-p {
+    color: #0c5397;
+}
+
+@media only screen and (max-width: 600px) {
+    #ait-placemtn-info {
+        height: auto;
+        padding-bottom: 50px;
+
+    }
+
+    #ait-placemtn-info .edge {
+        margin-top: 20px;
+    }
+
+    #ait-placemtn-info h1 {
+        font-size: 1.7rem;
+    }
+
+    #ait-placemtn-info p {
+        padding: 0px 30px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    #ait-placemtn-info .container-fluid {
+        width: 100%;
+    }
+
+    #ait-placemtn-info h2 {
+        padding-top: 10px;
+        font-size: 30px;
+        font-weight: bolder;
+        color: #0c5397;
+    }
+
+    #ait-placemtn-info p {
+        font-size: 12px;
+        color: #727171;
+    }
+
+    #ait-placemtn-info .edge {
+        height: 120px;
+    }
+}
+
+/* AIT Placement Section Styling Ends */
+
+/* Trainers Company stylings */
+
+#trainers {
+    margin-top: 40px;
+}
+
+#trainers h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+#trainers .container-fluid {
+    width: 93%;
+}
+
+#trainers [src *="cognizant"] {
+    width: 200px;
+    height: auto;
+}
+
+#trainers [src *="hcl"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="infosis"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="accesture"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="oracle"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="ibm"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="amazon"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="visa"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="wipro"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="flipcart"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="dell"] {
+    width: 100px;
+    height: auto;
+}
+
+#trainers [src *="igenpack"] {
+    max-width: 100px;
+    height: auto;
+}
+
+#trainers .trainee {
+    display: flex;
+    grid-gap: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+    background: url(../images/back-4.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    margin: 20px 10px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+
+#trainers .trainee:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+}
+
+@media only screen and (max-width: 600px) {
+    #trainers .container-fluid {
+        width: 100%;
+    }
+
+    #trainers .trainee {
+        height: 100px;
+    }
+
+    #trainers [src *="cognizant"] {
+        width: 150px;
+    }
+
+    #trainers [src *="genpact"] {
+        width: 150px;
+    }
+
+    #trainers h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 27px;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    #trainers .container-fluid {
+        width: 100%;
+    }
+
+    #trainers .trainee {
+        height: 80px;
+    }
+
+    #trainers [src $="png"] {
+        width: 60px;
+    }
+
+    #trainers h1 {
+        margin-left: 30px;
+    }
+}
+
+
+/* Trainers Company stylings Ended */
+
+
+/* AchiverIT Process Styling */
+
+#ait-process {
+    margin-top: 70px;
+}
+
+#ait-process h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-left: 80px;
+}
+
+#ait-process .container-fluid {
+    width: 90%;
+}
+
+#ait-process img {
+    width: 93%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #ait-process {
+        margin-top: 40px;
+    }
+
+    #ait-process h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 27px;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+}
+
+/* AchiverIT Process Styling */
+
+
+/* Job Opening Styling Starts  */
+
+#job-openings .container-fluid {
+    width: 90%;
+}
+
+#job-openings h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-left: 80px;
+}
+
+#job-openings .accordion-item button {
+    background: url(../images/back-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    border-radius: 5px;
+}
+
+#job-openings .accordion-item {
+    background: url(../images/back-4.jpg);
+    background-size: cover;
+}
+
+#job-openings h2 {
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+}
+
+#job-openings p {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+#job-openings li {
+    padding: 10px;
+    color: #727171;
+    list-style-type: disc;
+}
+
+#job-openings .accordian-label {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+#job-openings .accordian-label .label-part1 {
+    padding: 20px;
+}
+
+
+#job-openings .fa-angles-down {
+    color: white;
+    font-size: 22px;
+    padding: 0px 20px;
+    padding-top: 70px;
+
+}
+
+#job-openings .accordion-item {
+    margin: 30px 10px;
+    /* height: 200px; */
+}
+
+@media only screen and (max-width: 600px) {
+    #job-openings h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 25px;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #job-openings .container-fluid {
+        width: 100%;
+    }
+
+    #job-openings h2 {
+        font-size: 17px;
+    }
+
+    #job-openings .job-section2 {
+        margin-top: -25px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:991px) {
+    #job-openings .container-fluid {
+        width: 100%;
+    }
+
+    #job-openings h2 {
+        font-size: 15px;
+    }
+
+    #job-openings p {
+        font-size: 15px;
+    }
+
+    #job-openings .accordian-label {
+        height: 120px;
+    }
+
+    #job-openings h1 {
+        margin-left: 25px;
+    }
+}
+
+/* Job Opening Styling Ends */
+
+/* Ait Business Styling Starts */
+#ait-business {
+    background: url(../images/edureka-business.png);
+    background-size: cover;
+    background-position: left;
+    height: 335px;
+    padding: 30px 140px;
+}
+
+#ait-business .container-fluid {
+    width: 100%;
+}
+
+#ait-business h1 {
+    display: inline;
+    font-size: 28px;
+    color: white;
+    font-weight: bolder;
+    line-height: 96px;
+
+}
+
+#ait-business p {
+    display: inline;
+    font-size: 16px;
+    color: white;
+    line-height: 60px;
+    padding-left: 10px;
+
+}
+
+#ait-business h2 {
+    font-size: 23px;
+    color: white;
+    font-weight: bolder;
+    line-height: 40px;
+
+}
+
+#ait-business h3 {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    line-height: 60px;
+
+}
+
+#ait-business a {
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: #0c5397;
+    padding: 16px 30px;
+}
+
+#ait-business a:hover {
+    color: white;
+    background-color: orangered !important;
+}
+
+@media only screen and (max-width:600px) {
+    #ait-business {
+        background-size: cover;
+        background-position: left;
+        height: auto;
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+
+    #ait-business h1 {
+        display: inline;
+        font-size: 28px;
+        color: white;
+        font-weight: bolder;
+        line-height: 50px;
+
+    }
+
+    #ait-business p {
+        display: inline;
+        font-size: 16px;
+        color: white;
+        line-height: 10px;
+        padding-left: 10px;
+
+    }
+
+    #ait-business h2 {
+        font-size: 13px;
+        color: white;
+        font-weight: bolder;
+        line-height: 40px;
+
+    }
+
+    #ait-business h3 {
+        font-size: 12px;
+        color: white;
+        font-weight: bolder;
+        line-height: 40px;
+
+    }
+
+    #ait-business a {
+        font-size: 15px;
+        font-weight: bolder;
+        line-height: 60px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: white;
+        color: #0c5397;
+        padding: 16px 30px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:991px) {
+    #ait-business {
+        background-size: cover;
+        background-position: left;
+        height: auto;
+        padding: 10px 40px;
+    }
+}
+
+/* Ait Business Styling Ends */
+
+
+/* Corporate Clients Styling starts Here  */
+
+#corporate-clients {
+    margin-top: 150px;
+}
+
+#corporate-clients .container-fluid {
+    width: 82%;
+}
+
+#corporate-clients img {
+    max-width: 150px;
+    height: auto;
+}
+
+#corporate-clients .company {
+    padding: 20px;
+    text-align: center;
+}
+
+#corporate-clients h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-left: 150px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width:600px) {
+    #corporate-clients h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 25px;
+        padding: 25px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    #corporate-clients .container-fluid {
+        width: 100%;
+    }
+
+    #corporate-clients img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    #corporate-clients [src="images/cisco.png"] {
+        width: 110px;
+    }
+
+    #corporate-clients [src="images/cognizant.png"] {
+        width: 120px;
+    }
+
+    #corporate-clients {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:991px) {
+    #corporate-clients .container-fluid {
+        width: 100%;
+    }
+
+    #corporate-clients img {
+        max-width: 140px;
+        height: auto;
+    }
+
+    #corporate-clients [src="images/cisco.png"] {
+        width: 120px;
+    }
+
+    #corporate-clients {
+        margin-top: 70px;
+    }
+
+    #corporate-clients h1 {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Corporate Clients Styling ends Here  */
+
+
+/* About AIT Styling Starts */
+
+#about-ait {
+    margin-top: 50px;
+    background: url(../images/know-us2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 30px;
+}
+
+#about-ait .container-fluid {
+    width: 90%;
+}
+
+#about-ait h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+#about-ait p {
+    color: white;
+    font-weight: 400;
+}
+
+#about-ait .main li {
+    list-style-type: decimal;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#about-ait .sub li {
+    list-style-type: circle;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+#about-ait h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#about-ait h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+#about-ait .bottom-list1 ul li {
+    list-style-type: decimal;
+    color: white;
+    padding: 2px;
+}
+
+#about-ait .bottom-list2 ul li {
+    list-style-type: decimal;
+    color: white;
+    padding: 2px;
+}
+
+#about-ait .bottom-list3 p {
+    text-align: center;
+}
+
+/* Bottom Form Style */
+
+#about-ait .bottom-form {
+    background: rgba(255, 255, 255, 0.296);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+    padding: 20px;
+}
+
+
+#about-ait .bottom-form h2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+}
+
+#about-ait .bottom-form p {
+    font-size: 16px;
+}
+
+#about-ait .bottom-form form {
+    display: flex;
+    padding: 15px 0px;
+}
+
+#about-ait .bottom-form label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#about-ait .bottom-form input {
+    width: 270px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+#about-ait .bottom-form form .block {
+    margin-left: 20px;
+}
+
+#about-ait .bottom-form form button {
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: orangered;
+    border: none;
+    margin-top: 34px;
+}
+
+#about-ait .bottom-form form button:hover {
+    background-color: #1badd9;
+}
+
+@media only screen and (max-width:600px) {
+
+    #about-ait .bottom-form {
+        padding: 20px 5px;
+    }
+
+    #about-ait .bottom-form form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+
+    #about-ait .bottom-form form .block {
+        margin-top: 20px;
+    }
+
+    #about-ait .bottom-form form button {
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+
+    #about-ait .bottom-form h2 {
+        text-align: center;
+        font-size: 27px;
+        line-height: 38px;
+    }
+
+    #about-ait .bottom-form p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #about-ait .bottom-form label {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #about-ait .bottom-form input {
+        width: 93%;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        
+    }
+
+    #about-ait .container-fluid {
+        width: 100%;
+    }
+
+    #about-ait h1 {
+        font-size: 23px;
+    }
+
+    #about-ait .text-center p {
+        color: white;
+        text-align: justify;
+        font-weight: 400;
+    }
+
+    #about-ait .main {
+        padding-left: 0;
+    }
+
+    #about-ait .main li {
+        list-style-type: decimal;
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    #about-ait .sub li {
+        text-align: left;
+        list-style-type: circle;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 10px 0px;
+    }
+
+    #about-ait h2 {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+
+
+    #about-ait .bottom-list3 p {
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (min-width:600px) and (max-width:991px) {
+    #about-ait .bottom-form form .block {
+        margin-top: 20px;
+    }
+
+    #about-ait .bottom-form form button {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    #about-ait .bottom-form h2 {
+        text-align: center;
+        font-size: 27px;
+        line-height: 38px;
+    }
+
+    #about-ait .bottom-form p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #about-ait .bottom-form label {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #about-ait .bottom-form input {
+        width: 200px;
+        height: 45px;
+    }
+
+    #about-ait .bottom-form form button {
+        margin-top: 34px;
+    }
+}
+
+/* About AIT Styling Ends */
+
+
+/* Ait Locations Stylings Starts Here  */
+
+#ait-location iframe {
+    width: 100%;
+    height: 450px;
+}
+
+#ait-location p {
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+@media only screen and (max-width:600px) {
+    #ait-location iframe {
+        height: 250px;
+    }
+}
+
+/* Ait Locations Stylings Ends Here  */
+
+/* Footer Section Stylings Starts */
+
+/* Footer 1 Stylings */
+
+#footer .footer-1 {
+    padding: 30px 20px;
+    border-bottom: 1px solid white;
+}
+
+#footer .footer-1 p {
+    color: #727171;
+    text-align: justify;
+    padding-top: 15px;
+}
+
+#footer .footer-1 h2 {
+    color: #aea2a2;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#footer .footer-1 a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    padding-left: 5px;
+}
+
+#footer .footer-1 a:hover {
+    color: red;
+}
+
+#footer .footer-1 .contact-info {
+    color: white;
+}
+
+#footer .footer-1 .contact-info .fa-solid {
+    font-size: 20px;
+}
+
+#footer .footer-1 .contact-info .text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+#footer .footer-1 .contact-info .location {
+    padding: 15px 0px;
+}
+
+#footer .footer-1 .contact-info .phone {
+    padding: 15px 0px;
+}
+
+#footer .footer-1 .contact-info .email {
+    padding: 15px 0px;
+}
+
+#footer .footer-1 .company {
+    padding: 30px 40px;
+}
+
+#footer .footer-1 .trending-courses {
+    padding: 30px 0px;
+}
+
+#footer .footer-1 .contact-info {
+    padding: 30px 0px;
+}
+
+/* Footer1 Media Queries */
+
+@media only screen and (max-width:600px) {
+    #footer .footer-1 .logo-part {
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    #footer .footer-1 .company {
+        padding: 30px 10px;
+        border-bottom: 1px solid white;
+
+
+    }
+
+    #footer .footer-1 .trending-courses {
+        border-bottom: 1px solid white;
+
+    }
+
+    #footer .footer-1 .contact-info {
+        border-bottom: 1px solid white;
+
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:991px) {
+    #footer .footer-1 .logo-part {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #footer .footer-1 .logo-part p {
+        text-align: center;
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    #footer .footer-1 .company {
+        padding: 30px 30px;
+    }
+
+    #footer .footer-1 .contact-info .text {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+
+/* Footer2 Section Stylings Starts Here  */
+
+#footer .footer-2 {
+    padding-bottom: 4%;
+}
+
+#footer .footer-2 .social-media ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+#footer .footer-2 .social-media ul li a {
+    display: inline-block;
+    color: black;
+    font-size: 21px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 6px;
+}
+
+#footer .footer-2 .social-media ul li .facebook:hover {
+    background: #3b5998;
+}
+
+#footer .footer-2 .social-media ul li .linkedin:hover {
+    background: #0e76a8;
+}
+
+#footer .footer-2 .social-media ul li .twitter:hover {
+    background: #00acee;
+}
+
+#footer .footer-2 .social-media ul li .pintrest:hover {
+    background: #c8232c;
+}
+
+#footer .footer-2 .social-media ul li .youtube:hover {
+    background: #ff0000;
+}
+
+
+#footer .footer-2 .social-media li a:hover .fa-brands {
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+#footer .footer-2 .social-media .fa-brands {
+    transition-property: transform, color;
+    transition-duration: 0.8s;
+}
+
+
+/* Copyright Section Styligs  */
+
+#footer .footer-2 .copyright p {
+    color: #acacac;
+}
+
+#footer .footer-2 .copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer .footer-2 .copyright a:hover {
+    color: red;
+
+}
+
+#footer .footer-2 .copyright {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+#footer .footer-2 .container {
+    width: 65%;
+}
+
+/* Fixed Buttons Stylings */
+
+.fixed-buttons {
+    background: black;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.fixed-buttons .fa-whatsapp {
+    font-size: 40px;
+    color: lightgreen;
+}
+
+.fixed-buttons .whatsapp-chat {
+    text-align: center;
+}
+
+.fixed-buttons .phone {
+    display: flex;
+    align-items: center;
+}
+
+.fixed-buttons .phone-call a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.fixed-buttons .phone-call a:hover {
+    color: red;
+}
+
+.fixed-buttons .fa-phone-volume {
+    font-size: 38px;
+    color: #0056b3;
+    padding-left: 5px;
+}
+
+.fixed-buttons .mail {
+    display: flex;
+    align-items: center;
+}
+
+.fixed-buttons .email a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.fixed-buttons .email a:hover {
+    color: red;
+}
+
+.fixed-buttons .fa-envelope {
+    font-size: 38px;
+    color: orangered;
+    padding-left: 5px;
+}
+
+/* Footer 2 Media Queries  */
+
+@media only screen and (max-width:600px) {
+    #footer .footer-2 {
+        padding-bottom: 18%;
+    }
+
+    #footer .footer-1 {
+        border: none;
+    }
+
+    .fixed-buttons .btn-text {
+        display: none;
+    }
+
+    #footer .footer-2 .container {
+        width: 100%;
+    }
+
+    #footer .footer-2 .copyright a {
+        font-size: 12px;
+    }
+
+    #footer .footer-2 .copyright p {
+        font-size: 12px;
+    }
+
+    .fixed-buttons .fa-solid {
+        font-size: 30px;
+    }
+
+    .fixed-buttons .fa-brands {
+        font-size: 30px;
+    }
+
+    .fixed-buttons .whatsapp-chat {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fixed-buttons .phone {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fixed-buttons .mail {
+        justify-content: center;
+        text-align: center;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:991px) {
+    .fixed-buttons .fa-solid {
+        font-size: 30px;
+    }
+
+    .fixed-buttons .fa-brands {
+        font-size: 30px;
+    }
+
+    .fixed-buttons .btn-text {
+        font-size: 15px;
+    }
+
+    #footer .footer-2 {
+        padding-bottom: 9%;
+    }
+}
+
+/* Footer Section Stylings Ends */
+
+/* Contact-Form Styling Starts here  */
+
+#contact-form .form-btn {
+    position: fixed;
+    top: 50vh;
+    right: -55.5px;
+    transform: rotate(-90deg);
+    background: orangered;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+#contact-form .form-btn:hover {
+    color: #fff;
+    background: #1badd9;
+}
+
+#contact-form .modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form .modal-body label {
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+#contact-form .modal-body input {
+    margin: 10px;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid rgb(134, 126, 117);
+}
+
+#contact-form .modal-body textarea {
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+}
+
+#contact-form .modal-header {
+    background: #e5ecf4;
+    padding: 10px;
+}
+
+#contact-form h5 {
+    margin-left: auto;
+    font-size: 28px;
+    color: #000;
+}
+
+
+#contact-form .modal-footer button {
+    color: #fff;
+    background: orangered;
+}
+
+#contact-form .modal-footer button:hover {
+    background: #1badd9;
+}
+
+
+@media only screen and (max-width:600px) {
+    #contact-form .form-btn {
+        right: -28px;
+        font-size: 9px;
+        font-weight: 400;
+        padding: 5px 7px;
+        z-index: 2;
+    }
+
+    #contact-form .modal-header {
+        padding: 7px;
+    }
+
+    #contact-form h5 {
+        font-size: 20px;
+    }
+
+    #contact-form .modal-body label {
+        font-size: 17px;
+    }
+
+    #contact-form .modal-body input {
+        margin: 7px;
+        padding: 9px;
+    }
+
+    #contact-form .modal-body textarea {
+        margin: 7px;
+        padding-left: 9px;
+        padding-top: 0;
+    }
+}
+
+/* Contact-Form Styling Endss here  */
+
+
+/* Scroll-Up Button Stylings  */
+
+.scroll-btn {
+    position: fixed;
+    right: 12px;
+    bottom: 80px;
+    cursor: pointer;
+    width: 45px;
+    height: 40px;
+    background-color: rgb(255, 68, 0);
+    display: none;
+    border: none;
+}
+
+.scroll-btn .fa-caret-up {
+    color: white;
+    font-size: 24px;
+    padding: 9px 15px;
+}
+
+.scroll-btn:hover {
+    background-color: #3498db;
+}
+
+@media only screen and (max-width:600px){
+    .scroll-btn {
+        right: 5px;
+        bottom: 57px;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        border-radius: 5%;
+    }
+
+    .scroll-btn .fa-caret-up {
+        font-size: 27px;
+        padding: 8px 12.5px;
+    }
+}
+
+/* Scroll-Up Button Stylings  */
