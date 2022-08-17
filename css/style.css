@@ -3190,6 +3190,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: rgb(255, 68, 0);
     display: none;
     border: none;
+    text-align: center;
 }
 
 .scroll-btn .fa-caret-up {
